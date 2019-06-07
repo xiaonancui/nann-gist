@@ -1,0 +1,18 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Insecure world writable dir"
+description: "Insecure world writable dir"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      ls -ld /path/to/dir
+      sudo chmod 755 /path/to/dir
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-01-28T03:23:17.682Z"
+updatedAt: "2017-01-28T03:23:55.390Z"

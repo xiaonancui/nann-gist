@@ -1,0 +1,52 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Install JIRA on Ubuntu 16.04"
+description: "Install JIRA on Ubuntu 16.04"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      sudo apt-get update
+      sudo apt-get upgrade
+      
+      # Install Java Open JRE or JDK on Ubuntu 16.04
+      sudo apt install default-jdk
+      sudo apt install default-jre
+      
+      # Alternative way to install Open-JDK-7
+      sudo apt install openjdk-7-jre
+      sudo apt install openjdk-7-jdk
+      
+      # Install Java Oracle JRE or JDK on Ubuntu 16.04
+      sudo apt install python-software-properties
+      sudo add-apt-repository ppa:webupd8team/java
+      
+      sudo apt update
+      
+      sudo apt install oracle-java6-installer
+      sudo apt install oracle-java7-installer
+      sudo apt install oracle-java8-installer
+      
+      sudo update-alternatives --config java
+      
+      # Setup JAVA_HOME on Ubuntu 16.04
+      sudo update-alternatives --config java
+      sudo nano /etc/profile
+      export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.51-1.b16.el7_1.x86_64"
+      source /etc/profile
+      echo $JAVA_HOME
+      
+      # Jira Installation
+      wget [Jira_downloaded_version].bin
+      sudo chmod 777 [Jira_downloaded_version].bin
+      sudo ./[Jira_downloaded_version].bin
+      
+      # Official Tutorial : https://confluence.atlassian.com/jira061/jira-installation-and-upgrade-guide/installing-jira/installing-jira-on-linux
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-17T16:37:40.211Z"
+updatedAt: "2016-11-17T16:43:29.041Z"

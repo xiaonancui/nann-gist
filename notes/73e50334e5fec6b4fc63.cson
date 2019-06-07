@@ -1,0 +1,26 @@
+type: "MARKDOWN_NOTE"
+folder: "35edac54c2e2a7e34b1f"
+title: "Install PHP & Composer on Windows"
+content: '''
+  ### Install PHP & Composer on Windows
+  
+  1. Download the latest PHP7 (non-thread safe version)
+  2. Extract the contents of the zip file into C:\\php
+  3. Copy C:\\PHP7\\php.ini-development to C:\\PHP7\\php.ini
+  4. Open the newly copied C:\\PHP7\\php.ini in a text editor, Scroll down to “Directory in which the loadable extensions (modules) reside.” and uncomment: extension_dir = “ext”
+  5. Scroll down to the DLL extensions section and uncomment the extensions you want to use.
+  6. Keep your php.ini file in a safe place when you upgrade in the future!
+  7. Add C:\\PHP7 to the Windows 10 system path environment variable, add C:\\php to System Variables Path
+  8. In a command prompt test that the installation is successful by typing php -v
+  9. php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  10. php composer-setup.php
+  11. php -r "unlink('composer-setup.php');"
+  12. create a new composer.bat file alongside the composer.phar file so that Windows 10 can execute it more easily. 
+  13. echo @php "%~dp0composer.phar" %*>composer.bat
+  14. composer -V
+'''
+tags: []
+isStarred: false
+isTrashed: false
+createdAt: "2017-12-21T01:50:24.742Z"
+updatedAt: "2017-12-21T02:01:39.918Z"

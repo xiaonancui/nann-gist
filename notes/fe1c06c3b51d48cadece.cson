@@ -1,0 +1,21 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Remove Last Login Info"
+description: "Remove Last Login Info"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      # remove last login info when open terminal
+      touch .hushlogin
+      
+      # restore last login info when open terminal
+      rm -rf .hushlogin
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-01-29T15:36:54.881Z"
+updatedAt: "2017-01-29T15:38:08.173Z"

@@ -1,0 +1,21 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Check Service Running as"
+description: "Check Service Running as"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      # for apache2
+      ps -ef | egrep '(httpd|apache2|apache)' | grep -v `whoami` | grep -v root | head -n1 | awk '{print $1}'
+      
+      # for nginx
+      ps aux|grep nginx|grep -v grep
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-07-29T04:50:57.438Z"
+updatedAt: "2017-07-29T09:46:38.098Z"

@@ -1,0 +1,39 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Fish Shell Configuration File"
+description: "Fish Shell Configuration File"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      #######################################
+      # location : ~/.config/fish/config.fish
+      #######################################
+      
+      # Path to Oh My Fish install.
+      set -q XDG_DATA_HOME
+        and set -gx OMF_PATH "$XDG_DATA_HOME/omf"
+        or set -gx OMF_PATH "$HOME/.local/share/omf"
+      
+      # Customize Oh My Fish configuration path.
+      #set -gx OMF_CONFIG "/Users/kinozenc/.config/omf"
+      set -gx NVM_DIR /Users/kinozenc/.nvm
+      set -gx PATH /Users/kinozenc/.composer/vendor/bin $PATH
+      
+      # Set PATH for Laravel Spark
+      set -gx PATH /Users/kinozenc/Developer/frameworks/spark-laravel $PATH
+      
+      # Load oh-my-fish configuration.
+      source $OMF_PATH/init.fish
+      set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+      
+      # Reset Fish Greeting Message
+      set fish_greeting ""
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-01-29T15:34:32.070Z"
+updatedAt: "2017-01-29T15:35:57.554Z"

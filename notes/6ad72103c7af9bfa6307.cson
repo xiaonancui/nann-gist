@@ -1,0 +1,37 @@
+type: "SNIPPET_NOTE"
+folder: "abf44743b9a030c0e89e"
+title: "metadata.json sample"
+description: "metadata.json sample"
+snippets: [
+  {
+    name: "metadata.json"
+    mode: "JSON"
+    content: '''
+      // download url
+      // https://vagrantcloud.com/laravel/boxes/homestead/versions/3.1.0/providers/virtualbox.box
+      
+      {
+          "name": "laravel/homestead",
+          "versions": 
+          [
+              {
+                  "version": "3.2.0",
+                  "providers": [
+                      {
+                        "name": "virtualbox",
+                        "url": "homestead-virtualbox-0.4.4.box"
+                      }
+                  ]
+              }
+          ]
+      }
+      
+      // vagrant box add metadata.jso
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false
+createdAt: "2017-10-09T05:30:43.943Z"
+updatedAt: "2017-10-09T05:49:17.142Z"

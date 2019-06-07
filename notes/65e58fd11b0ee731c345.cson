@@ -1,0 +1,30 @@
+createdAt: "2018-01-02T10:30:25.937Z"
+updatedAt: "2018-01-02T10:33:28.459Z"
+type: "SNIPPET_NOTE"
+folder: "428844bb364aa7db626c"
+title: "Fix Valet Installation Error"
+description: "Fix Valet Installation Error"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      # Officel installation intro
+      composer global require laravel/valet
+      
+      # Error
+      # Installation failed, reverting ./composer.json to its original content.
+      
+      # Fix Solution
+      composer global require consolidation/cgr
+      cgr laravel/cgr
+      valet install
+      
+      # github repo
+      # https://github.com/consolidation/cgr
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

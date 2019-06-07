@@ -1,0 +1,22 @@
+type: "MARKDOWN_NOTE"
+folder: "cc17419d6a07d6ec8b46"
+title: "Update plugins and core without ftp account info"
+content: '''
+  # Update plugins and core without ftp account info
+  
+  check current service running as
+  
+  change ownership of website files
+  ```
+  sudo chown -R www(www-data) /path/to/your/wordpress/files
+  ```
+  
+  modify wp-config.php and insert
+  ```
+  define('FS_METHOD', "direct");
+  ```
+'''
+tags: []
+isStarred: false
+createdAt: "2017-07-29T10:25:35.559Z"
+updatedAt: "2017-07-29T10:27:29.503Z"

@@ -1,0 +1,35 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "SSH Login with RAS Key"
+description: "SSH Login with RAS Key"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      # Generate Key on Local Machine
+      ssh-keygen -b 4096
+      
+      # From Local Machine
+      ssh-copy-id user@123.45.67.89
+      
+      # Option Method
+      cat ~/.ssh/id_rsa.pub | ssh user@123.45.67.89 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+      
+      # Disable the Password for Root Login
+      sudo vi /etc/ssh/sshd_config
+      
+      # Find and Modify
+      PermitRootLogin without-password
+      
+      reload ssh
+      
+      # Set Permission
+      sudo chmod 700 -R ~/.ssh && chmod 600 ~/.ssh/authorized_keys
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:45:09.376Z"
+updatedAt: "2016-11-13T23:02:58.154Z"

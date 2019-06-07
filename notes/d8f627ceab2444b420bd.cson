@@ -1,0 +1,19 @@
+type: "MARKDOWN_NOTE"
+folder: "428844bb364aa7db626c"
+title: "Spark Release Notes"
+content: '''
+  # Spark Release Notes
+  
+  **v3.0.5 - December 22nd, 2016 11:16 PM**
+  - Various bug fixes.
+  
+  **v3.0.4 - November 29th, 2016 10:46 PM**
+  - Various bug fixes.
+  
+  **v3.0.3 - November 15th, 2016 10:54 PM**
+  - The spark:update command now only updates to the latest version in your major version series. If you would like to upgrade to the latest major version, use the --major flag.
+'''
+tags: []
+isStarred: false
+createdAt: "2017-01-26T23:28:33.153Z"
+updatedAt: "2017-01-26T23:31:56.676Z"

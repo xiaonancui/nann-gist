@@ -1,0 +1,19 @@
+createdAt: "2018-01-02T09:47:52.911Z"
+updatedAt: "2018-01-02T09:48:21.749Z"
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Remove Last Login Info from Terminal Welcome Screen"
+description: "Remove Last Login Info from Terminal Welcome Screen"
+snippets: [
+  {
+    name: "Terminal.bash"
+    mode: "Shell"
+    content: '''
+      #Create .hushlogin file
+      touch ~/.hushlogin
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

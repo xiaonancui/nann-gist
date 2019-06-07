@@ -1,0 +1,18 @@
+type: "MARKDOWN_NOTE"
+folder: "0fb0bd2404b369152e0d"
+title: "Envoyer "
+content: '''
+  ## Envoyer ##
+  
+  ### xiancity-prod ###
+  
+  This key must be added to the server's .ssh/authorized_keys file for each user you want to run tasks as.
+  
+  ```
+  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDqYG5mJmDTeCd7DGvcqMVPr99o+VhW3yusJ1AD9KQ1KSVAMHp6Vj+dd/xteI0wg2mzROtAN5ipX/MHP0UWeQp+N0UBAHvP3vIqtHiTbIUAj+xsUWbisams2d7KUSoGi8WnIfX/xB4wIgn0499ddliXOwp+MQZVKKkrG+rbYabf9O70kr8ifStHkfsPU6Qvq8xAP9mQuXTvrFozMzLksaJHoMIMvv0u8Py4qv4lG3L11YYRkRaxAZO9eJgfofYCHhaVvbxhyXQ5xnLC11FyyfKG4e8dgOsUnOe0XJ4U28mT502rPso0A5OQ7NZaaJ6lmBFd9fmQXzcjWSYo86VvD317 worker@envoyer.io
+  ```
+'''
+tags: []
+isStarred: false
+createdAt: "2017-01-18T06:51:50.257Z"
+updatedAt: "2017-01-18T11:50:30.465Z"

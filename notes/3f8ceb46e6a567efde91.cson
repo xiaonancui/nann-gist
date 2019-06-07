@@ -1,0 +1,43 @@
+type: "MARKDOWN_NOTE"
+folder: "0fb0bd2404b369152e0d"
+title: "xiancity.org "
+content: '''
+  ## xiancity.org ##
+  
+  ### PRODUCTION SERVER ###
+  
+  * provider : aliyun
+  * location : 
+  * os : ubuntu 16.04 x64
+  * ip : 101.201.52.54
+  * username : root
+  * password : KZ7blh0WTcB#rUZE
+  
+  ### PRODUCTION DATABASE ###
+  
+  * provider : aliyun RDS
+  * db_name : 
+  * db_username : 
+  * db_password : 
+  
+  ### TESTING SERVER ###
+  
+  * provider : vultr
+  * location : tokyo
+  * os : ubuntu 16.04 x64
+  * ip : 45.32.11.71
+  * username : root
+  * password : !8Fz69([m9UKdY[9
+  
+  ### TESTING DATABASE ###
+  
+  * provider : localhost
+  * db_name : 
+  * db_username : 
+  * db_password : 
+  
+'''
+tags: []
+isStarred: false
+createdAt: "2017-01-18T15:08:22.197Z"
+updatedAt: "2017-01-18T15:17:05.924Z"

@@ -1,0 +1,25 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Fix Server Fully Qualified Domain Name [FQDN] issue"
+description: "Fix Server Fully Qualified Domain Name [FQDN] issue"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      # Problem Output
+      Could not reliably determine the server fully qualified domain name, using 127.0.0.1 for ServerName
+      
+      # Solution
+      sudo vi /etc/apache2/conf-available/fqdn.conf
+      # Insert
+      ServerName localhost
+      # Save & Exit
+      sudo a2enconf fqdn
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:42:18.213Z"
+updatedAt: "2016-11-13T23:03:12.106Z"

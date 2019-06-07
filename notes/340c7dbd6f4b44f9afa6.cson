@@ -1,0 +1,50 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "New Virutal Host in Apache - Linode"
+description: "New Virutal Host in Apache - Linode"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      # 1. Create site virutal host file from default template
+      sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.com.conf
+      
+      # 2. Modify & Config.conf file
+      sudo vi /etc/apache2/sites-available/example.com.conf
+      
+      # example.com.conf - start
+      <Directory /var/www/html/example.com/public_html>
+          Require all granted
+      </Directory>
+      <VirtualHost *:80>
+              ServerName example.com
+              ServerAlias www.example.com
+              ServerAdmin webmaster@localhost
+              DocumentRoot /var/www/html/example.com/public_html
+      
+              ErrorLog /var/www/html/example.com/logs/error.log
+              CustomLog /var/www/html/example.com/logs/access.log combined
+      
+      </VirtualHost>
+      # example.com.conf - end
+      
+      # 3. Create the directories referenced in .conf file
+      sudo mkdir -p /var/www/html/example.com/{public_html,logs}
+      
+      # 4. Link virutal host file from sites-available -> sites-enabled
+      sudo a2ensite example.com.conf
+      
+      # 5. Disable the default virtual host to minimize security risk
+      sudo a2dissite 000-default.conf
+      
+      # 6. Reload Apache
+      # sudo systemctl reload apache2
+      sudo service apache2 restart
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:50:02.818Z"
+updatedAt: "2016-11-13T23:02:39.128Z"

@@ -1,0 +1,31 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Modify Default root Folder on Ubuntu 14.04 LTS"
+description: "Modify Default root Folder on Ubuntu 14.04 LTS"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      sudo vi /etc/apache2/sits-available/000-default.conf
+      
+      # Find and Modify
+      DocumentRoot /NEW/LOCATION
+      
+      sudo vi /etc/apache2/apache2.conf
+      
+      # Find and Modify
+      <Directory /NEW/LOCATION/>
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+      </Directory>
+      
+      sudo service apache2 restart
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:39:46.336Z"
+updatedAt: "2016-11-13T23:03:19.224Z"

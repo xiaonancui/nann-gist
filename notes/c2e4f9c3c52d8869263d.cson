@@ -1,0 +1,24 @@
+type: "SNIPPET_NOTE"
+folder: "00744a2c76b897cc4655"
+title: "Remove index.php from URL"
+description: "Remove index.php from URL"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      # check .htaccess file
+      ls -a 
+      
+      # enable rewrite
+      a2enmod rewrite
+      
+      # restart apache server
+      service apache2 restart
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-16T18:40:27.876Z"
+updatedAt: "2016-11-16T18:41:30.089Z"

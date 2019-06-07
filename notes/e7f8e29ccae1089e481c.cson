@@ -1,0 +1,16 @@
+type: "SNIPPET_NOTE"
+folder: "35edac54c2e2a7e34b1f"
+title: "Install PHP on Windows"
+description: "Install PHP on Windows"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: ""
+  }
+]
+tags: []
+isStarred: false
+isTrashed: true
+createdAt: "2017-12-21T01:48:06.634Z"
+updatedAt: "2017-12-21T01:50:16.254Z"

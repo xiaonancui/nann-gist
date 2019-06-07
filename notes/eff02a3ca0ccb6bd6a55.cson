@@ -1,0 +1,21 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Fix Linux File and Folder Permission"
+description: "Fix Linux File and Folder Permission"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      sudo chown -R $USER:$USER /var/www/example.com/public_html
+      
+      sudo chmod -R 755 /var/www
+      
+      sudo chown -R www-data:www-data /var/www/example.com/public_html
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:49:01.070Z"
+updatedAt: "2016-11-13T22:49:57.904Z"

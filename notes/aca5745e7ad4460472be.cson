@@ -1,0 +1,18 @@
+type: "SNIPPET_NOTE"
+folder: "abf44743b9a030c0e89e"
+title: "Remove Box with Specific Version"
+description: "Remove Box with Specific Version"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      vagrant box list
+      vagrant box remove laravel/homestead --box-version=0
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-06-11T15:40:17.369Z"
+updatedAt: "2017-06-11T15:41:08.057Z"

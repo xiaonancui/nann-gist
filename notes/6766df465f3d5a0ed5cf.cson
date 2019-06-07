@@ -1,0 +1,27 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Add RSA Key"
+description: "Add RSA Key"
+snippets: [
+  {
+    name: "Terminal.bash"
+    mode: "Shell"
+    content: '''
+      # Generate key
+      ssh-keygen
+      
+      # 4096 byte key
+      ssh-keygen -b 4096
+      
+      # List out all available key
+      ls -al ~/.ssh
+      
+      # Show key content
+      cat ~/.ssh/id_rsa.pub | pbcopy
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-06-30T22:23:43.452Z"
+updatedAt: "2017-06-30T22:29:42.473Z"

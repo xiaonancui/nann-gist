@@ -1,0 +1,20 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Show Server IP Address"
+description: "Show Server IP Address"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\\/.*$//'
+      
+      # optional method
+      curl http://icanhazip.com
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:31:11.157Z"
+updatedAt: "2016-11-13T23:03:41.379Z"

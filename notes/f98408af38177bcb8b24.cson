@@ -1,0 +1,29 @@
+type: "SNIPPET_NOTE"
+folder: "d10cf92d8c1baf6cab85"
+title: "Sequel Pro connects to MySQL in Vagrant"
+description: "Sequel Pro connects to MySQL in Vagrant"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      # Quick n dirty method, do not use it in production environment
+      # vagrant ssh and add a user that can connect from anywhere
+      mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '' WITH GRANT OPTION; FLUSH PRIVILEGES;"
+      
+      # find the address MySQL is bound to
+      cat /etc/mysql/my.cnf | grep bind-address
+      
+      # We'll be using the SSH connection tab in Sequel Pro. The username is root. By default, no password is required.
+      # Vagrant's default SSH settings are as follows:
+      # SSH Host: 127.0.0.1
+      # SSH User: vagrant
+      # SSH Key: ~/.vagrant.d/insecureprivatekey
+      # SSH Port: 2222
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-01-10T21:07:50.892Z"
+updatedAt: "2017-01-10T21:10:22.698Z"

@@ -1,0 +1,46 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Intall LinuxBrew on Ubuntu"
+description: "Intall LinuxBrew on Ubuntu"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      # Prepare for LinuxBrew
+      sudo apt-get update
+      sudo apt-get upgrade -y
+      sudo sudo apt-get install -y build-essential make cmake scons curl git \\
+                                     ruby autoconf automake autoconf-archive \\
+                                     gettext libtool flex bison \\
+                                     libbz2-dev libcurl4-openssl-dev \\
+                                     libexpat-dev libncurses-dev
+                                     
+      # Installing LinuxBrew
+      git clone https://github.com/Homebrew/linuxbrew.git ~/.linuxbrew
+      
+      # Update Environment Variables
+      sudo vi ~/.bashrc
+      ----
+      # Until LinuxBrew is fixed, the following is required.
+      # See: https://github.com/Homebrew/linuxbrew/issues/47
+      export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/local/lib64/pkgconfig:/usr/lib64/pkgconfig:/usr/lib/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib64/pkgconfig:/usr/share/pkgconfig:$PKG_CONFIG_PATH
+      ## Setup linux brew
+      export LINUXBREWHOME=$HOME/.linuxbrew
+      export PATH=$LINUXBREWHOME/bin:$PATH
+      export MANPATH=$LINUXBREWHOME/man:$MANPATH
+      export PKG_CONFIG_PATH=$LINUXBREWHOME/lib64/pkgconfig:$LINUXBREWHOME/lib/pkgconfig:$PKG_CONFIG_PATH
+      export LD_LIBRARY_PATH=$LINUXBREWHOME/lib64:$LINUXBREWHOME/lib:$LD_LIBRARY_PATH
+      ----
+      # Make configuration take effects
+      source ~/.bashrc
+      # Test Installation
+      which brew
+      echo $PKG_CONFIG_PATH
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:48:21.352Z"
+updatedAt: "2016-12-28T05:04:25.552Z"

@@ -1,0 +1,19 @@
+createdAt: "2017-12-26T14:03:49.369Z"
+updatedAt: "2017-12-26T14:04:31.411Z"
+type: "SNIPPET_NOTE"
+folder: "d818b16dab07630b3b75"
+title: "Install PHP 7.2 on Mac"
+description: "Install PHP 7.2 on Mac"
+snippets: [
+  {
+    name: "Terminal.bash"
+    mode: "Shell"
+    content: '''
+      brew tap homebrew/homebrew-php
+      brew install homebrew/php/php72
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,26 @@
+type: "MARKDOWN_NOTE"
+folder: "abf44743b9a030c0e89e"
+title: "OpenShift Welcome Notes"
+content: '''
+  # OpenShift Welcome Notes
+  
+  Successfully started and provisioned VM with 2 cores and 5 G of memory.
+  To modify the number of cores and/or available memory modify your local Vagrantfile
+  
+  You can now access the OpenShift console on: https://10.2.2.2:8443/console
+  Configured users are (<username>/<password>):
+  admin/admin
+  user/user
+  
+  But, you can also use any username and password combination you would like to create a new user.
+  
+  You can find links to the client libraries here: https://www.openshift.org/vm
+  If you have the oc client library on your host, you can also login from your host.
+  
+  To use OpenShift CLI, run:
+  $ oc login https://10.2.2.2:8443
+'''
+tags: []
+isStarred: false
+createdAt: "2017-02-02T20:06:10.581Z"
+updatedAt: "2017-02-02T20:07:29.989Z"

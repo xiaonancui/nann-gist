@@ -1,0 +1,21 @@
+type: "SNIPPET_NOTE"
+folder: "ee29f1e5b032055976f9"
+title: "Post-install-cmd when Laravel new project"
+description: "Post-install-cmd when Laravel new project"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      // Error : Script "post-install-cmd" is not defined in this package
+      
+      composer global update
+      laravel new project-name
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false
+createdAt: "2017-09-12T03:35:54.166Z"
+updatedAt: "2017-09-12T03:39:44.882Z"

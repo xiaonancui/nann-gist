@@ -1,0 +1,38 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Format & Mount New Disk"
+description: "Format & Mount New Disk"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      df -h
+      fdisk -l
+      fdisk /dev/DISK_NAME
+      
+      # Disk Format Start
+      n
+      p
+      1
+      [Press Return Key]
+      [Press Return Key]
+      wq
+      # Disk Format End
+      
+      fdisk -l
+      mkfs.ext4 /dev/DISK_NAME
+      echo /dev/DISK_NAME /MOUNT_LOCATION ext4 defaults 0 0 >> /etc/fstab
+      cat /etc/fstab
+      mount /dev/DISK_NAME /MOUNT_LOCATION
+      df -h
+    '''
+  }
+]
+tags: [
+  "Linux"
+  "Aliyun"
+]
+isStarred: false
+createdAt: "2016-11-13T22:32:11.458Z"
+updatedAt: "2017-01-18T02:34:22.914Z"

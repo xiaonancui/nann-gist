@@ -1,0 +1,41 @@
+type: "SNIPPET_NOTE"
+folder: "d818b16dab07630b3b75"
+title: "Install Apache Maven 3 on Sierra 10.12"
+description: "Install Apache Maven 3 on Sierra 10.12"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      # Prerequisites: Installing Oracle Java JDK 7/8 on Mac OS X
+      
+      # 1. Download Apache Maven 3.x Binaries : Maven.bin.tar.gz for Mac OS
+      
+      # 2. Unzip the tar.gz file
+      
+      # 3. Open Terminal
+      
+      # 4. Verify the installed Java version
+      java -version
+      
+      # 5. Relocating JDK on Mac
+      sudo su
+      rm Downloads/apache-maven*bin.tar.gz
+      chown -R root:wheel Downloads/apache-maven*
+      mv Downloads/apache-maven* /opt/apache-maven
+      exit
+      
+      # 6. Add Maven Binaries to User Path
+      vi $HOME/.bashrc
+      export PATH=$PATH:/opt/apache-maven/bin
+      bash
+      
+      # 7. Testing the Maven Installation
+      mvn --version
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-02-02T19:41:02.621Z"
+updatedAt: "2017-02-02T19:52:52.045Z"

@@ -1,0 +1,29 @@
+type: "SNIPPET_NOTE"
+folder: "d10cf92d8c1baf6cab85"
+title: "Create Database Manually"
+description: "Create Database Manually"
+snippets: [
+  {
+    name: "mysql.sql"
+    mode: "SQL"
+    content: '''
+      /* Method 1 */
+      CREATE DATABASE wordpress;
+      CREATE USER 'wpuser' IDENTIFIED BY 'password';
+      GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser';
+      
+      /* Method 2 */
+      CREATE DATABASE dbname DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;
+      GRANT ALL ON dbname.* TO 'dbuser' IDENTIFIED BY 'dbpassword';
+      flush privileges;
+      
+      /* For MySQL 8.0 series */
+      CREATE USER `wangwei`@`127.0.0.1` IDENTIFIED BY 'passowrd';  
+      GRANT ALL ON *.* TO `wangwei`@`127.0.0.1` WITH GRANT OPTION; 
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-07-29T04:03:48.763Z"
+updatedAt: "2018-08-20T16:52:32.123Z"

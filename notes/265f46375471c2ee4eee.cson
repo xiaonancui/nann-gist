@@ -1,0 +1,22 @@
+createdAt: "2017-12-26T14:11:11.800Z"
+updatedAt: "2017-12-26T14:11:35.937Z"
+type: "SNIPPET_NOTE"
+folder: "d818b16dab07630b3b75"
+title: "Install phpbrew on Mac"
+description: "Install phpbrew on Mac"
+snippets: [
+  {
+    name: "Terminal.bash"
+    mode: "Shell"
+    content: '''
+      curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
+      chmod +x phpbrew
+      
+      # Move phpbrew to somewhere can be found by your $PATH
+      sudo mv phpbrew /usr/local/bin/phpbrew
+    '''
+  }
+]
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,23 @@
+type: "SNIPPET_NOTE"
+folder: "d818b16dab07630b3b75"
+title: "Install PHP 7 on Mac OS"
+description: "Install PHP 7 on Mac OS"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      brew update
+      brew upgrade
+      brew tap homebrew/dupes
+      brew tap homebrew/versions
+      brew tap homebrew/homebrew-php
+      brew unlink php56 
+      brew install php70
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-06-03T14:31:08.979Z"
+updatedAt: "2017-06-03T14:32:32.415Z"

@@ -1,0 +1,18 @@
+type: "MARKDOWN_NOTE"
+folder: "53a4a41c34871626327c"
+title: "Operator Precedence"
+content: '''
+  # Operator Precedence
+  
+  Boolean operators follow rules that specify the order in which they are evaluated. This order is called **_Boolean operator precedence_**
+  
+  The precedence of each Boolean operator is as follows:
+  
+    1.! is evaluated first
+    2.&& is evaluated second
+    3.|| is evaluated third
+'''
+tags: []
+isStarred: false
+createdAt: "2017-01-28T04:32:54.518Z"
+updatedAt: "2017-01-28T04:34:53.969Z"

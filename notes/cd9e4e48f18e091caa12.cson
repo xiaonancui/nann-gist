@@ -1,0 +1,19 @@
+type: "SNIPPET_NOTE"
+folder: "d818b16dab07630b3b75"
+title: "Set HostName in OS X"
+description: "Set HostName in OS X"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      # HostName is the name assigned to the computer as visible from the command line, and it's also used by local and remote networks when connecting through SSH and Remote Login.
+      scutil --set HostName "host_name"
+      scutil --get HostName
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-16T15:31:51.156Z"
+updatedAt: "2016-11-16T15:33:20.320Z"

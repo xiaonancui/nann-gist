@@ -1,0 +1,19 @@
+type: "SNIPPET_NOTE"
+folder: "d818b16dab07630b3b75"
+title: "Set ComputerName in OS X"
+description: "Set ComputerName in OS X"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      # ComputerName is the so-called "user-friendly" name for the Mac, it's what will show up on the Mac itself and what will be visible to others when connecting to it over a local network. This is also what's visible under the Sharing preference panel.
+      scutil --set ComputerName "computer_name"
+      scutil --get ComputerName
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-16T15:27:46.725Z"
+updatedAt: "2016-11-16T15:33:15.115Z"

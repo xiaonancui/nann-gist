@@ -1,0 +1,19 @@
+type: "SNIPPET_NOTE"
+folder: "d818b16dab07630b3b75"
+title: "Set LocalHostName in OS X"
+description: "Set LocalHostName in OS X"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      # LocalHostName is the name identifier used by Bonjour and visible through file sharing services like AirDrop
+      scutil --set LocalHostName "local_host_name"
+      scutil --get LocalHostName
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-16T15:35:29.881Z"
+updatedAt: "2016-11-16T15:36:37.681Z"

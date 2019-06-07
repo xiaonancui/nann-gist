@@ -1,0 +1,27 @@
+type: "SNIPPET_NOTE"
+folder: "dccd786b341073956425"
+title: "Setting Username & Email in Git"
+description: "Setting Username & Email in Git"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      # Set User Name
+      git config --global user.name "Your Name"
+      
+      # Show User Name
+      git config --global user.name
+      
+      # Set User Email
+      git config --global user.email "your_email@example.com"
+      
+      # Show User Email
+      git config --global user.email
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-18T15:34:27.449Z"
+updatedAt: "2016-11-18T15:36:46.223Z"

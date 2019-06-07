@@ -1,0 +1,18 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Set hostname for Debian Distro"
+description: "Set hostname for Debian Distro"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      # Arch / CentOS 7 / Debian 8 / Fedora version 18 and above / Ubuntu 15.04 and above
+      hostnamectl set-hostname new_custom_hostname
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-12-27T08:05:16.342Z"
+updatedAt: "2016-12-27T08:06:44.898Z"

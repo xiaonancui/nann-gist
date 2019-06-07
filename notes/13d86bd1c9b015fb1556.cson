@@ -1,0 +1,21 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Fix LC_ALL issue"
+description: '''
+  Fix LC_ALL issue
+  
+'''
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      sudo vi /etc/default/locale
+      LC_ALL="en_US.UTF-8"
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:25:09.359Z"
+updatedAt: "2016-12-23T07:32:28.360Z"

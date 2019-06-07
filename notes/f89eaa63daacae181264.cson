@@ -1,0 +1,39 @@
+type: "SNIPPET_NOTE"
+folder: "0f5bcbe97a47895959cb"
+title: "Sass Installation on Mac"
+description: "Sass Installation on Mac"
+snippets: [
+  {
+    name: "terminal.bash"
+    mode: "Shell"
+    content: '''
+      # complete homebrew installation before proceed codes below
+      # tutorials reference link : https://gorails.com/setup/osx/10.12-sierra
+      
+      # update homebrew
+      brew update
+      
+      # install rbenv and related pieces
+      brew install rbenv ruby-build
+      
+      # list out available version for installation
+      rbenv install --list
+      
+      # ruby gem installation
+      rbenv install version_num
+      
+      # set global ruby version
+      rbenv global version_num
+      
+      # sass installation
+      gem install sass
+      
+      # check current sass version
+      sass -v
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2017-08-24T15:33:04.820Z"
+updatedAt: "2017-08-24T16:48:59.605Z"

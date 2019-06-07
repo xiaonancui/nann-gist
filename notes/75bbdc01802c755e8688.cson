@@ -1,0 +1,27 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Install PHP 7.0 with FPM"
+description: "Install PHP 7.0 with FPM"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      sudo apt-get install software-properties-common
+      sudo add-apt-repository ppa:ondrej/php
+      sudo apt-get update
+      
+      # Upgrading mod_php with Apache
+      sudo apt-get install php7.0
+      sudo apt-get install php7.0-mysql
+      
+      # Upgrading PHP-FPM with Nginx
+      sudo apt-get install php7.0-fpm
+      sudo apt-get install php7.0-mysql
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:37:57.165Z"
+updatedAt: "2016-11-13T23:03:26.417Z"

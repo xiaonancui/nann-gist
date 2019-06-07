@@ -1,0 +1,24 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Install the Latest Version of Nginx"
+description: "Install the Latest Version of Nginx"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      sudo apt-get install software-properties-common
+      sudo add-apt-repository ppa:nginx/stable
+      
+      # for fresh installation of nginx
+      sudo apt-get install nginx
+      
+      # for os which has installed nginx
+      sudo apt-get upgrade nginx
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:29:09.641Z"
+updatedAt: "2016-12-27T09:01:46.345Z"

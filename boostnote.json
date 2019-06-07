@@ -1,0 +1,90 @@
+{
+  "folders": [
+    {
+      "key": "964d33dd63874b35ef99",
+      "color": "#4a4a4a",
+      "name": "Linux"
+    },
+    {
+      "key": "d10cf92d8c1baf6cab85",
+      "color": "#9b9b9b",
+      "name": "MySQL"
+    },
+    {
+      "key": "bec6aefe60fd41ceab60",
+      "color": "#B013A4",
+      "name": "JavaScript"
+    },
+    {
+      "key": "35edac54c2e2a7e34b1f",
+      "color": "#FF8E00",
+      "name": "PHP"
+    },
+    {
+      "key": "00744a2c76b897cc4655",
+      "color": "#E8D252",
+      "name": "OctoberCMS"
+    },
+    {
+      "key": "428844bb364aa7db626c",
+      "color": "#30D5C8",
+      "name": "Laravel"
+    },
+    {
+      "key": "0770358d72fcee88e77a",
+      "color": "#E10051",
+      "name": "TreeHouse"
+    },
+    {
+      "key": "06d09df85975f87e3a2f",
+      "color": "#9013fe",
+      "name": "Lynda"
+    },
+    {
+      "key": "d818b16dab07630b3b75",
+      "color": "#4a90e2",
+      "name": "Mac OS"
+    },
+    {
+      "key": "dccd786b341073956425",
+      "color": "#ffffff",
+      "name": "Git"
+    },
+    {
+      "key": "d92270690725bca1ca48",
+      "color": "#3FD941",
+      "name": "WeChat"
+    },
+    {
+      "key": "0fb0bd2404b369152e0d",
+      "color": "#8b572a",
+      "name": "innBit"
+    },
+    {
+      "key": "53a4a41c34871626327c",
+      "color": "#E10051",
+      "name": "Java"
+    },
+    {
+      "key": "abf44743b9a030c0e89e",
+      "color": "#B013A4",
+      "name": "Vagrant"
+    },
+    {
+      "key": "cc17419d6a07d6ec8b46",
+      "color": "#30D5C8",
+      "name": "WordPress"
+    },
+    {
+      "key": "0f5bcbe97a47895959cb",
+      "color": "#3FD941",
+      "name": "CSS"
+    },
+    {
+      "key": "ee29f1e5b032055976f9",
+      "color": "#f22f5b",
+      "name": "Laravel"
+    }
+  ],
+  "version": "1.0"
+}

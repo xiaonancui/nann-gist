@@ -1,0 +1,18 @@
+type: "SNIPPET_NOTE"
+folder: "964d33dd63874b35ef99"
+title: "Create New User with sudo Permission on Ubuntu"
+description: "Create New User with sudo Permission on Ubuntu"
+snippets: [
+  {
+    name: "iterm2.bash"
+    mode: "Shell"
+    content: '''
+      adduser example_user
+      adduser example_user sudo
+    '''
+  }
+]
+tags: []
+isStarred: false
+createdAt: "2016-11-13T22:44:25.705Z"
+updatedAt: "2016-11-13T22:45:00.248Z"

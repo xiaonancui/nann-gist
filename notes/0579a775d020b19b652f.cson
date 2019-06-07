@@ -1,0 +1,53 @@
+type: "MARKDOWN_NOTE"
+folder: "0fb0bd2404b369152e0d"
+title: "Laravel Forge "
+content: '''
+  ## Laravel Forge ##
+  
+  ### Server Configuration ###
+  
+  * Server Name : xiancity-prod
+  * Service Provider : Aliyun
+  * RAM : 1
+  * IP : 101.201.52.54
+  * Database : xiancity
+  
+  ### Server Provision Script ###
+  
+  ```
+  wget -O forge.sh https://forge.laravel.com/servers/115257/vps?forge_token=bBHDHlCPKtFpQyEyBkcPx8CCnpZ2trdZurtlbj91; bash forge.sh
+  ```
+  
+  ### Login Credentials ###
+  * Name:	xiancity-prod
+  * IP Address:	101.201.52.54
+  * Username:	forge
+  * Sudo Password:	EaK895BWf898dNDGzyfg
+  * Database Username:	forge
+  * Database Password:	orprY0H584glTkJaeMA1
+  
+  ### Test Site @Vultr ###
+  
+  ```
+  wget -O forge.sh https://forge.laravel.com/servers/115297/vps?forge_token=bBHDHlCPKtFpQyEyBkcPx8CCnpZ2trdZurtlbj91; bash forge.sh
+  ```
+  
+  * Location : Tokyo
+  * IP : 45.32.20.97
+  * Username : root
+  * Password : T#2tCrXm8jt6f.)U
+  ---
+  * Name:	xiancity-test-vultr
+  * IP Address:	45.32.20.97
+  * Username:	forge
+  * Sudo Password:	DoPV8LRRFHHD6FntH6pO
+  * Database Username:	forge
+  * Database Password:	rIiEcBe3kfXZjrfys45B
+  
+  
+  Application key [base64:0PMvJlSq8lij4UmhPdj5Fy00IMmk8S70TgY7e8fDVIg=] 
+'''
+tags: []
+isStarred: false
+createdAt: "2017-01-18T03:43:16.409Z"
+updatedAt: "2017-01-18T13:25:14.982Z"
